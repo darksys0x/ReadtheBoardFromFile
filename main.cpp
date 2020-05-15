@@ -33,7 +33,14 @@ void readFromFile (string path){
 
 
 }
-
+void PrintBoard(const vector<vector<int>> board) {
+  for (int i = 0; i < board.size(); i++) {
+    for (int j = 0; j < board[i].size(); j++) {
+      cout << board[i][j];
+    }
+    cout << "\n";
+  }
+}
 
 
 int main(){
@@ -41,9 +48,9 @@ int main(){
  string path = " /Users/hamadalshehri/code/wdi/c++/ReadtheBoardFromFile/1.board";
 
   readFromFile(path);
+//PrintBoard(board);
 
-
-
+  
 
     return 0 ;
 }
