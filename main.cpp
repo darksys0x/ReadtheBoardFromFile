@@ -21,7 +21,7 @@ void readFromFile (string path){
 
         while (getline(myfile , line))
         {
-            cout<<line;
+            cout<<line<<'\n';
         }
 
         
@@ -45,7 +45,7 @@ void PrintBoard(const vector<vector<int>> board) {
 
 int main(){
 
- string path = " /Users/hamadalshehri/code/wdi/c++/ReadtheBoardFromFile/1.board";
+ string path = "1.board";
 
   readFromFile(path);
 //PrintBoard(board);
